@@ -1,0 +1,15 @@
+.primary-button {
+  background-color: var(--dark-red-berry);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #a30000; /* Slightly brighter red */
+  cursor: pointer;
+}
