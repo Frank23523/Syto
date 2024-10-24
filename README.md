@@ -1,8 +1,8 @@
-## Syto: Lessons for Every Child
+# Syto: Lessons for Every Child
 
 Syto is a learning platform designed to provide interactive lessons for children. It connects instructors with students, offering a wide variety of courses in a fun and engaging way. Built using the MERN stack (MongoDB, Express, React, and Node.js), this project aims to create a scalable, secure, and user-friendly platform.
 
-Table of Contents
+## Table of Contents
 
 - Features
 - Technology Stack
@@ -12,45 +12,62 @@ Table of Contents
 - API Documentation
 - Future Improvements
 
-Features
-User authentication (register, login, logout, password recovery)
-User roles (student, instructor)
-Secure payments via Stripe
-Interactive course management for instructors (create, update, view courses)
-Student enrollment and course progress tracking
-Lesson previews with media content
-Email notifications for important actions (course updates, payment success)
-Responsive design for mobile, tablet, and desktop
+## Features
 
-Project Structure
+- User authentication (register, login, logout, password recovery)
+- User roles (student, instructor)
+- Secure payments via Stripe
+- Interactive course management for instructors (create, update, view courses)
+- Student enrollment and course progress tracking
+- Lesson previews with media content
+- Email notifications for important actions (course updates, payment success)
+- Responsive design for mobile, tablet, and desktop
+
+## Project Structure
+
 .
+
 ├── client # Client-side code (React.js + Next.js)
+
 │ ├── components # UI Components (Forms, Cards, Navs, Modals, Routes)
+
 │ ├── context # Global state management with React context
+
 │ ├── pages # Next.js pages for different routes
+
 │ ├── public # Public assets (CSS, images)
+
 │ ├── utils # Helper functions for the client
+
 ├── server # Server-side code (Node.js + Express)
+
 │ ├── controllers # Request handling logic
+
 │ ├── middlewares # Custom middleware (auth, error handling)
+
 │ ├── models # MongoDB models (User, Course)
+
 │ ├── routes # API routes for different entities (auth, courses, instructors)
+
 │ ├── utils # Utility functions for authentication, etc.
+
 └── README.md # Project documentation
 
-Installation
+## Installation
 
-Prerequisites
+### Prerequisites
+
 Ensure you have the following installed on your system:
-Node.js
-MongoDB
-Stripe Account (for payment processing)
 
-Backend Setup
+- Node.js
+- MongoDB
+- Stripe Account (for payment processing)
+
+### Backend Setup
 
 1. Clone the repository:
-   git clone https://github.com/your-username/syto.git
-   cd syto/server
+   <git clone https://github.com/Frank23523/Syto.git>
+   <cd syto/server>
 
 2. Install the backend dependencies:
    npm install
