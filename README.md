@@ -2,56 +2,14 @@
 
 Syto is a learning platform designed to provide interactive lessons for children. It connects instructors with students, offering a wide variety of courses in a fun and engaging way. Built using the MERN stack (MongoDB, Express, React, and Node.js), this project aims to create a scalable, secure, and user-friendly platform.
 
-## Table of Contents
+## Architecture & Technologies
 
-- Features
-- Technology Stack
-- Project Structure
-- Installation
-- Running the Application
-- API Documentation
-- Future Improvements
+The Syto platform is built with the MERN stack:
 
-## Features
-
-- User authentication (register, login, logout, password recovery)
-- User roles (student, instructor)
-- Secure payments via Stripe
-- Interactive course management for instructors (create, update, view courses)
-- Student enrollment and course progress tracking
-- Lesson previews with media content
-- Email notifications for important actions (course updates, payment success)
-- Responsive design for mobile, tablet, and desktop
-
-## Project Structure
-
-.
-
-├── client # Client-side code (React.js + Next.js)
-
-│ ├── components # UI Components (Forms, Cards, Navs, Modals, Routes)
-
-│ ├── context # Global state management with React context
-
-│ ├── pages # Next.js pages for different routes
-
-│ ├── public # Public assets (CSS, images)
-
-│ ├── utils # Helper functions for the client
-
-├── server # Server-side code (Node.js + Express)
-
-│ ├── controllers # Request handling logic
-
-│ ├── middlewares # Custom middleware (auth, error handling)
-
-│ ├── models # MongoDB models (User, Course)
-
-│ ├── routes # API routes for different entities (auth, courses, instructors)
-
-│ ├── utils # Utility functions for authentication, etc.
-
-└── README.md # Project documentation
+- Frontend: React, Next.js
+- Backend: Node.js, Express
+- Database: MongoDB
+- Payment Integration: Stripe (in testing phase, with plans to switch to Paystack)
 
 ## Installation
 
@@ -72,40 +30,44 @@ Ensure you have the following installed on your system:
 `cd syto/server`
 
 2. Install the backend dependencies:
-   npm install
+
+`npm install`
 
 3. Create a .env file and add your environment variables:
-
-# .env
 
 DATABASE=mongodb://localhost:27017/syto
 JWT_SECRET=your_jwt_secret
 STRIPE_SECRET=your_stripe_secret_key
 
 4. Start the MongoDB server:
-   sudo service mongod start
+
+`sudo service mongod start`
 
 5. Start the backend:
-   npm start
 
-Frontend Setup
+`npm start`
+
+### Frontend Setup
 
 1. Navigate to the client directory:
-   cd ../client
+
+`cd ../client`
 
 2. Install the frontend dependencies:
-   npm install
+
+`npm install`
 
 3. Create a .env.local file for the client with necessary environment variables:
 
-# .env.local
+.env.local
 
 NEXT_PUBLIC_API=http://localhost:8000/api
 
 4. Start the frontend:
-   npm run dev
 
-Running the Application
+`npm run dev`
+
+## Running the Application
 
 After setting up both the backend and frontend, visit http://localhost:3000 to access the application.
 
@@ -113,7 +75,7 @@ After setting up both the backend and frontend, visit http://localhost:3000 to a
 - Instructors can create and manage courses from their dashboard.
 - Students can enroll in courses and track progress.
 
-API Documentation
+## API Documentation
 
 The backend provides a RESTful API for managing users, courses, and payments. Below is a summary of the main endpoints:
 
@@ -135,9 +97,29 @@ The backend provides a RESTful API for managing users, courses, and payments. Be
 
 * POST /api/stripe/payment: Process a payment using Stripe
 
-Future Improvements
+## Features
+
+- User authentication (register, login, logout, password recovery)
+- User roles (student, instructor)
+- Secure payments via Stripe
+- Interactive course management for instructors (create, update, view courses)
+- Student enrollment and course progress tracking
+- Lesson previews with media content
+- Email notifications for important actions (course updates, payment success)
+- Responsive design for mobile, tablet, and desktop
+
+## Future Improvements
 
 - Integrate real-time communication features (e.g., chat between students and instructors)
 - Add gamification elements (e.g., badges, leaderboards)
 - Improve accessibility with enhanced ARIA roles and support for screen readers
 - Implement caching using Redis for improved performance
+
+## Team
+
+We are a two-member team:
+
+Frank Amoateng Anin
+Daniel Quist
+
+Together, we’ve developed Syto, a platform where instructors can create and upload courses, and students can easily access them.
