@@ -90,8 +90,6 @@ visit http://localhost:3000 to access the application.
 - Login with your user credentials or register as a new user
 - Instructors can create and manage courses from their dashboard.
 - Students can enroll in courses and track progress.
-- API Documentation
-- The backend provides a RESTful API for managing users, courses, and payments. Below is a summary of the main endpoints:
 
 ## Features
 
