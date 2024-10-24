@@ -26,31 +26,18 @@ Syto is a learning platform designed to provide interactive lessons for children
 ## Project Structure
 
 .
-
 ├── client # Client-side code (React.js + Next.js)
-
 │ ├── components # UI Components (Forms, Cards, Navs, Modals, Routes)
-
 │ ├── context # Global state management with React context
-
 │ ├── pages # Next.js pages for different routes
-
 │ ├── public # Public assets (CSS, images)
-
 │ ├── utils # Helper functions for the client
-
 ├── server # Server-side code (Node.js + Express)
-
 │ ├── controllers # Request handling logic
-
 │ ├── middlewares # Custom middleware (auth, error handling)
-
 │ ├── models # MongoDB models (User, Course)
-
 │ ├── routes # API routes for different entities (auth, courses, instructors)
-
 │ ├── utils # Utility functions for authentication, etc.
-
 └── README.md # Project documentation
 
 ## Installation
@@ -66,8 +53,8 @@ Ensure you have the following installed on your system:
 ### Backend Setup
 
 1. Clone the repository:
-   <git clone https://github.com/Frank23523/Syto.git>
-   <cd syto/server>
+   `git clone https://github.com/Frank23523/Syto.git>`
+   `cd syto/server`
 
 2. Install the backend dependencies:
    npm install
